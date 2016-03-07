@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+	<title></title>
+</head>
+<body>
+	<img id = "formula" src="img/formula.png" width="150px" height="40px" style="position:fixed;margin-left:700px;margin-top:100px;display:none;">
+		<audio src="./Nothing's Gonna Change My Love For You.mp3" controls="controls" style="display:none" id="mp3">
+		</audio>
+	<div id="content" class="content">
+		<div id="code">
+			<span>
+				亲爱的加林：<br>
+			<span class="tab"></span>想写信给的念头也动过好几个，但始终怕你忍笑而拒没有动笔。<br>
+			<span class="tab"></span>但今早实在是做了个有意思的梦，忍不住想要分享给你~<br>
+			<span class="tab"></span>不知道该怎么和你提我的初恋，准确的说应该是单相思的初恋。她是我的初中同学，我一直喜欢了她好多年，这里暂时称她为D。<br>
+			<span class="tab"></span>梦中的情节是这样的：记忆回到了我初中的时候，那是一个升旗仪式的早晨，我们班还在排队进操场。我在人群之中找到了D，她排在了队伍的最前面，也就是最矮的那一个。我努力地与同学换着位置，终于来到了她身后。她扎着马尾辫，身材比我印象中的她要娇小。<br>
+			<span class="tab"></span>D回过头对我笑笑，我突然发现，原来她的模样变成了你。而正是这一回头的寒暄，我们的队伍落后了别的班级，于是我们赶紧冲了出去，去将国旗急急忙忙地升上旗杆。升旗的时候，手拼命地拉着，导致旗杆摇摇晃晃的。突然，画面中的旗杆幻化成了参天的古树，古树的枝干在一瞬间，断裂了，只剩一个空洞洞的树桩。当人群集体围过来看树桩的时候，发现树桩之中长出了新的幼苗，也是在恍惚之间，发芽成长，重新长到了原来的高度。而原先枯空的枝干变得郁郁葱葱，枝叶茂密。<br>
+			<span class="tab"></span>就在这一惊一乍之间，我醒了。仔细想来，这个梦告诉了我两点。首先，对初恋的执念不过是一棵枯树，虽然在心中长了许多年，却只是在空长，所以树干是空的，断裂后留下的树桩连年轮都看不到。其次，那棵新长出的大树，应该指的是你吧，梦中初恋的样子也变成了你的样子，你的一切在梦中都很真实。我想，一定是你终于替换了D在我心中的位置，我的心变得满满都是你。原先你在我心中萌出的小芽，已悄然长成了参天的大树。<br>
+			<span class="tab"></span>2015年4月27日，第一次与你主动交谈，对你一见钟情。然后，整日整夜都在想你，我收藏了每次与你吃饭的小票，电影的票根，回忆了每次与你一起的时光，都很开心。一起聊电影、聊日剧、一起打电动、一起打羽毛球......<br>
+			<span class="tab"></span>最后，我想和你提一下，昨天我是为你设计了一款T恤，希望送你的时候你不要拒绝我。祈愿你接受我的爱慕。我爱你加林。<br>
+
+			<span class="space"></span>写于 2015年7月5日 晨
+			</span>
+			<br>这个函数记录了我的心跳动的轨迹
+		</div>
+	</div>
+	<div id="canvasZone">  
+
+        <canvas id="myCanvas" style="background:#FFDDFF"></canvas>  
+
+    </div>
+</body>
+</html>
+<script>
+	var question = $(".content").typewriter(120);
+	
+	document.onkeydown=function(event){ 
+		 if (event.keyCode == "13") {
+		 	question.replaceValue();
+		 	question.continueWrite();
+		 }
+	}
+
+	function recall(){ 
+		
+		$("#formula").show();
+		startAnimation(); 
+	}
+
+	setTimeout('$("#mp3")[0].play();',10000);
+</script>
