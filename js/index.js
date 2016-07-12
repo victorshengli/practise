@@ -1,4 +1,4 @@
-//0711
+//0712
 (function($) {
 	$.fn.typewriter = function(time) {
 		this.continueWrite = function(){ 
